@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    background-color: #f0f0f0;
+}
+     .box{
+        width:300px;
+        height:250px;
+        background-color:white;
+        display:flex;
+        border-radius:10px;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        display: flex;
+        position:relative;
+        
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        background: #e6e6e6;
+        
+        z-index: 1;
+    
+}
+
+    .family{
+        margin-top:-200px;
+        margin-left:60px;
+        font-weight:bold;
+        color:black;
+        font-size:20px;
+        margin-bottom:30px;
+    }
+    .me{
+        display:inline-block;
+        width:100px;
+        margin-left:-30px;
+        margin-top:20px;
+        background-color:black;
+        color:white;
+        border:none;
+        border-radius:5px;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        transition:background-color 0.5s,color 0.5s
+        
+    }
+    .me:hover{
+        background-color:white;
+        color:black;
+        cursor:pointer;
+    }
+    .lensa{
+        width: 60px;
+        border-radius:400px;
+        margin-left:-90px;
+        margin-right:0;
+        margin-top:-140px;
+        position:relative;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        animation: float s ease-in-out infinite;}
+      
+    .mati{
+        width: 60px;
+        border-radius:400px;
+        margin-left:-90px;
+        margin-right:-100;
+        margin-top:-140px;
+        position:relative;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease;
+        animation: float 3s ease-in-out infinite;}
+      
+    .mati:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+         
+
+        
+    }
+    .mati:active{
+        background-image: url('photo_2026-03-01_03-34-40.jpg');
+        transform: scale(1.05);
+
+    }
+     
+    .lensa:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+         
+
+        
+    }
+    .lensa:active{
+        background-image: url('photo_2026-03-01_03-34-40.jpg');
+        transform: scale(1.05);
+
+    }
+    .amo{
+        width: 60px;
+        border-radius:400px;
+        margin-left:-95px;
+        margin-top:-140px;
+        position:relative;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease;
+       }
+       
+      
+    
+    .amo:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+         
+
+        
+    }
+    .amo:active{
+        background-image: url('photo_2026-03-01_03-34-40.jpg');
+        transform: scale(1.05);}
+    .keti{
+        width: 60px;
+        border-radius:30px;
+        margin-left:-140px;
+        margin-top:-140px;
+        position:relative;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease;
+        
+        animation: float 3s ease-in-out infinite;}
+       
+        
+    
+    .keti:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        transform: scale(1.05);
+         
+
+        
+    }
+    .keti:active{
+        background-image: url('photo_2026-03-01_03-34-40.jpg');
+        transform: scale(1.05);}
+    .dot{
+        display:inline-block;
+        margin-top:0;
+        margin-bottom:165px;
+        margin-right:10px;
+       
+        font-size:60px;
+    }
+    .message{
+        width:40px;
+        border-radius:100px;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+         margin-left:-90px;
+        margin-right:-100;
+       margin-top:120px;
+        transition: transform 0.2s ease
+
+
+    }
+    .message:hover{
+         cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        transform: scale(1.05);
+
+         }
+   
+        
+        
+
+    
+    .insta{width:40px;
+        border-radius:10px;
+        box-shadow:10px 10px 10px rgba(0,0,0,o.3);
+        margin-left:-95px;
+        margin-right:-100;
+         margin-top:120px;
+          transition: transform 0.2s ease
+
+}
+     .insta:hover{
+         cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        transform: scale(1.05);}
+    .x{
+        width:40px;
+        border-radius:100px;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        margin-left:-178px;
+        margin-right:40px;
+       margin-top:120px;
+       transition: transform 0.2s ease;
+    }
+    .x:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        transform: scale(1.05);}
+    .leet{
+        width:40px;
+        border-radius:100px;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+       margin-top:120px;
+        transition:transform 0.3s ease;
+    }
+    .leet:hover{
+        cursor:pointer;
+        box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+        transform: scale(1.05);
+    }
+    
+    </style>
+</head>
+<body>
+   
+
+    <div class="box">
+         <p class="family">Lensa and Mati family</p>
+         <p class="dot">...</p>
+          <img class="keti" src="photo_2026-03-01_04-39-53.jpg">
+        
+         <img class="amo" src="photo_2026-03-01_04-16-23.jpg">
+         
+        
+          <img class="lensa" src="photo_2026-03-01_03-34-40.jpg">
+         <img class="mati" src="Screenshot 2026-03-01 033706.png">
+         <button class="me">meet them!</button>
+          <a  class="click" href="https://instagram.com/toleemk" traget="_blank "><img class="insta" src="download.svg"></a>
+
+          <a  class="click" href="https://facebook.com" traget="_blank"><img class="leet" src="download (1).svg"></a>
+
+          <a  class="click" href="google.com" traget="_blank"><img class="x" src="download (2).jpg"></a>
+
+         <a  class="click" href="https://t.me/c/2376390312/1" traget="_blank"><img class="message" src="download.jpg"></a>
+
+
+        
+        
+    </div>
+</body>
+</html>
